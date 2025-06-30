@@ -11,13 +11,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh './run_tests.sh'
+                bat './run_tests.sh'
                 // OR run each file separately
                 // sh 'python3 creationtestcase.py'
                 // sh 'python3 creationsuitetest.py'
