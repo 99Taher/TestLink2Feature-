@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Pull code from GitHub or other repository
-                git 'https://github.com/99taher/TestLink2Feature-'
+                git branch: 'main', url: 'https://github.com/99taher/TestLink2Feature-'
             }
         }
 
