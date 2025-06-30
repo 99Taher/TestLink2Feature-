@@ -9,12 +9,7 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                bat 'pip install -r requirements.txt || exit /b'
-            }
-        }
-
+       
         stage('Run Tests') {
             steps {
                 bat './run_tests.sh'
