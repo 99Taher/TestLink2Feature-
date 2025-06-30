@@ -12,9 +12,9 @@ pipeline {
        
         stage('Run Tests') {
             steps {
-                bat './run_tests.sh'
+                
                 // OR run each file separately
-                // sh 'python3 creationtestcase.py'
+                bat 'python3 creation.py'
                 // sh 'python3 creationsuitetest.py'
                 // sh 'python3 creation_base_de_doner.py'
                 // sh 'python3 recupertiontest.py'
