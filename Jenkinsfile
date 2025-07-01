@@ -14,7 +14,7 @@ pipeline {
             steps {
                 
                 // OR run each file separately
-               bat 'py -3.11 test.py'
+               bat 'python test.py'
                 // sh 'python3 creationsuitetest.py'
                 // sh 'python3 creation_base_de_doner.py'
                 // sh 'python3 recupertiontest.py'
