@@ -1,3 +1,6 @@
+import sys
+print(sys.executable)
+print(sys.version)
 from testlink import TestlinkAPIClient
 
 url = "http://localhost/testlink/testlink-1.9.20/lib/api/xmlrpc/v1/xmlrpc.php"
