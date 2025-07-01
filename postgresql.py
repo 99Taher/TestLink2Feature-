@@ -60,6 +60,7 @@ for project in projects:
                         VALUES (%s, %s, %s, %s, %s) ON CONFLICT (id) DO NOTHING''',
                       (case_id, name, summary, project_name, suite_name))
                     except Exception as e:
+                        s=1
                        #print(f"Erreur insertion test case {case_id}: {e}")
             elif isinstance(testcases, list):
               for case in testcases:
@@ -72,6 +73,7 @@ for project in projects:
                         VALUES (%s, %s, %s, %s, %s) ON CONFLICT (id) DO NOTHING''',
                       (case_id, name, summary, project_name, suite_name))
                     except Exception as e:
+                        s=2
                       # print(f"Erreur insertion test case {case_id}: {e}")           
         except Exception as e:
             s=0
