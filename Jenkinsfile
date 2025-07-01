@@ -14,7 +14,7 @@ pipeline {
             steps {
                 
                 // OR run each file separately
-               echo "helloe"
+               bat 'python test.py'
                 // sh 'python3 creationsuitetest.py'
                 // sh 'python3 creation_base_de_doner.py'
                 // sh 'python3 recupertiontest.py'
