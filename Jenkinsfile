@@ -14,7 +14,7 @@ pipeline {
             steps {
                 
                 // OR run each file separately
-               bat ' "C:\\Users\\user\\OneDrive\\Bureau\\stagetest\\venv\\Scripts\\python.exe"  test.py'
+               bat ' "C:\\Users\\user\\OneDrive\\Bureau\\stagetest\\venv\\Scripts\\python.exe"  postgresql.py'
                 // sh 'python3 creationsuitetest.py'
                 // sh 'python3 creation_base_de_doner.py'
                 // sh 'python3 recupertiontest.py'
