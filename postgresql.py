@@ -74,6 +74,7 @@ for project in projects:
                     except Exception as e:
                       # print(f"Erreur insertion test case {case_id}: {e}")           
         except Exception as e:
+            s=0
             #print(f"Erreur pour la suite {suite_name} : {e}")
 
 
